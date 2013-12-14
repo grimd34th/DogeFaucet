@@ -32,7 +32,7 @@ echo "<br />";
 
 $username = $_POST['address'];
 $ip = $_SERVER['REMOTE_ADDR'];
-if(!empty($_POST['address'])) {
+if(!empty($username)) {
         if($doge->getbalance() < 20){
                 echo "Dry faucet, please donate";
         }else{
@@ -67,9 +67,9 @@ if(!empty($_POST['address'])) {
 }
 ?>
 <br />
-<Form Name ="form1" Method ="POST" ACTION = "index.php">
-<INPUT TYPE = "Text" VALUE ="" NAME = "address">
-<INPUT TYPE = "Submit" Name = "Submit" VALUE = "Send">
+<Form Name="form1" Method="POST" ACTION="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+<INPUT TYPE="Text" VALUE="<?php echo $_POST['address']; ?>" NAME = "address">
+<INPUT TYPE="Submit" Name="Submit" VALUE="Send">
 <br/>
   Much Awesome Faucet Script  
 </FORM>
