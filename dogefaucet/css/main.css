@@ -1,0 +1,22 @@
+#main {
+	font-family: "Comic Sans MS";
+	background-color: #FC0;
+	border: thick groove #06F;
+	list-style-position: inside;
+	list-style-type: square;
+	height: 650px;
+	width: auto;
+}
+#dogeslogos {
+	background-color: #03F;
+	border: medium double #FF0;
+	height: auto;
+	width: auto;
+	position: fixed;
+	left: auto;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	margin: 80px;
+	float: right;
+}
